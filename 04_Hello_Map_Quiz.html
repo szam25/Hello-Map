@@ -19,12 +19,14 @@ API Course, Lesson 1 -->
      // TODO: Complete the following function to initialize the map
      function initMap() {
        // TODO: use a constructor to create a new map JS object. You can use the coordinates
-    	map = new google.maps.Map(document.getElementById('map'));
+    	map = new google.maps.Map(document.getElementById('map'),{
        // we used, 40.7413549, -73.99802439999996 or your own!
+      centre: {lat: 22.647051, lng: 88.431683},
+      zoom: 13,});
      }
    </script>
    <!--TODO: Load the JS API ASYNCHRONOUSLY below.-->
-   <script>
+   <script async defer src = "https://maps.googleapis.com/maps/api/js?key=MYAPIKEY&v=3&callback=initMap">
    </script>
  </body>
 </html>
